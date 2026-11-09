@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ocean Wave Footer</title>
+    <meta name="description" content="A calm ocean-themed footer with animated SVG waves, floating social icons, newsletter subscription and useful links.">
+    <meta name="author" content="MetaSkillGroup">
+
+    <!-- Google Fonts - Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <footer class="ocean-footer">
+        <!-- Animated background bubbles are created by script.js -->
+        <div class="bubbles" aria-hidden="true"></div>
+
+        <!-- Three layered animated SVG waves -->
+        <div class="wave-container" aria-hidden="true">
+            <svg class="waves" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path class="wave wave1" d="M0,40 C150,100 350,0 600,40 C850,80 1050,0 1200,40 V120 H0 Z"></path>
+                <path class="wave wave2" d="M0,60 C200,10 400,100 600,60 C800,20 1000,100 1200,60 V120 H0 Z"></path>
+                <path class="wave wave3" d="M0,80 C150,30 350,110 600,80 C850,50 1050,110 1200,80 V120 H0 Z"></path>
+            </svg>
+        </div>
+
+        <div class="footer-content">
+            <!-- Logo and About -->
+            <section class="footer-about" aria-label="About OceanWave">
+                <h2><i class="fa-solid fa-water" aria-hidden="true"></i> OceanWave</h2>
+                <p>Explore the beauty of the ocean. Stay connected with us and discover amazing experiences.</p>
+            </section>
+
+            <!-- Three link columns -->
+            <nav class="footer-links" aria-label="Footer links">
+                <div class="link-column">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h3>Explore</h3>
+                    <a href="#story">Our Story</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#faqs">FAQs</a>
+                </div>
+                <div class="link-column">
+                    <h3>Support</h3>
+                    <a href="#help">Help Center</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#support">Support</a>
+                </div>
+            </nav>
+
+            <!-- Newsletter form -->
+            <section class="newsletter" aria-labelledby="newsletter-title">
+                <h3 id="newsletter-title">Subscribe to Our Newsletter</h3>
+                <p>Get the latest updates directly in your inbox.</p>
+                <form id="newsletter-form" novalidate>
+                    <label class="visually-hidden" for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="message" class="form-message" role="status" aria-live="polite"></p>
+            </section>
+
+            <!-- Social media icons -->
+            <section class="social-section" aria-label="Follow us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Copyright row -->
+        <div class="copyright">
+            <p>&copy; <span id="year">2026</span> OceanWave. All Rights Reserved.</p>
+            <p>Designed with <i class="fa-solid fa-heart" aria-hidden="true"></i> by MetaSkillGroup</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
